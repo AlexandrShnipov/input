@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>input-type-file</title>
+</head>
+
+<body>
+
+
+    <form method="POST" action="#">
+
+        <input type="text" name="Name" placeholder="Name" tabindex="1">
+        <input type="email" name="E-mail" placeholder="E-mail" tabindex="2">
+
+        <div class="input__wrapper">
+            <label class="input__label">
+                <input class="input__box" type="file" name="file" multiple id="input__box" tabindex="3">
+                <img class="input__img" src="images/download-button.svg" alt="icon-input">
+                <span class="input__text">
+                    Прикрепить файл
+                </span>
+            </label>
+        </div>
+
+        <button class="btn" type="submit" tabindex="4">Отправить </button>
+    </form>
+
+
+
+</body>
+
+</html>

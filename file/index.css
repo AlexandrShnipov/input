@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 40px 20px;
+}
+
+input[type=text],
+input[type=email] {
+    border: 2px solid;
+    border-radius: 6px;
+    padding: 3px 5px;
+    transition: .25s ease;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=text]:focus,
+input[type=email]:focus {
+    border-color: #58862D;
+}
+
+.input__wrapper {
+    padding: 15px 0;
+}
+
+input[type=file] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.input__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+    border: 2px dashed #150B22;
+    padding: 9px 49px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.input__img {
+    width: 30px;
+    height: auto;
+    margin-right: 11px;
+}
+
+.input__label,
+.input__img {
+    transition: .25s ease;
+}
+
+.input__label:hover {
+    border: 2px dashed #58862D;
+}
+
+.input__label:hover .input__text {
+    color: #58862D
+}
+
+.input__label:hover .input__img {
+    transform: scale(1.2);
+}
+
+.btn {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 2em;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 6px;
+    transition: .25s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #58862D;
+}
